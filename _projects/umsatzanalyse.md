@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Umsatzanalyse
-permalink: /projekte/umsatzanalyse/
+permalink: /projekt1/
 ---
 
 ## 📈 Interaktive Umsatzanalyse mit Power BI

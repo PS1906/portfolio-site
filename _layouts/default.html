@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    function toggleProjects() {
+      var el = document.getElementById("projectList");
+      el.style.display = el.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</head>
+ <body>
+   <div class="wrapper">
+     <aside class="sidebar">
+       <nav>
+         <ul>
+           <li><a href="/about.html">Startseite</a></li>
+           <li>
+             <a href="#">Projekte</a>
+             <ul>
+               <li><a href="/projekte/projekt1.html" class="subproject">Projekt 1</a></li>
+               <li><a href="/projekte/projekt2.html" class="subproject">Projekt 2</a></li>
+               <li><a href="/projekte/projekt3.html" class="subproject">Projekt 3</a></li>
+	       <li><a href="/projekte/projekt4.html" class="subproject">Projekt 4</a></li>
+             </ul>
+           </li>
+           <li><a href="/about-me.html">Über mich</a></li>
+         </ul>
+       </nav>
+     </aside>
+
+     <main class="content">
+       {{ content }}
+     </main>
+   </div>
+ </body>
+</html>
+

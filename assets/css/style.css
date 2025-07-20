@@ -1,0 +1,76 @@
+/* Sidebar-Styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;               /* Höhe der Sidebar */
+  width: 170px;                /* Breite der Sidebar */
+  background-color: #f8f9fa;
+  padding-top: 7rem;
+  padding-left: 3.5rem;
+  padding-right: 1rem;
+  font-size: 1.4rem;           /* Schriftgröße der Sidebar */
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+/* Wrapper verschiebt den Content rechts neben die Sidebar */
+.wrapper {
+  display: flex;
+}
+
+/* Content mit Seitenabstand */
+.content {
+  margin-left: 220px;          /* Platz für Sidebar */
+  padding: 2rem;
+}
+
+/* Liste ohne Bulletpoints */
+.sidebar nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Link-Styling */
+.sidebar nav a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+/* Hover-Effekt */
+.sidebar nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sub-Items eingerückt */
+.sidebar nav ul ul {
+  padding-left: 1.2rem;
+  margin-top: 0.4rem;
+}
+
+.subproject {
+  font-size: 1rem;
+  color: #444;
+}
+
+.sidebar nav ul > li > ul {
+  margin-top: 0.8rem;  /* Erhöht vertikalen Abstand zwischen Kategorie & erstem Unterpunkt */
+}
+
+.sidebar nav ul > li > a {
+  font-weight: bold;
+}
+
+.sidebar .subproject {
+  font-weight: normal;
+  font-size: 1rem;
+  padding-left: 0.5rem;  /* optional: zusätzliches optisches Einrücken */
+}
+
+.sidebar nav a.active {
+  font-weight: bold;
+  color: #007acc;
+}
