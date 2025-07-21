@@ -1,16 +1,17 @@
-- title: "Willkommen"
-  url: "/"
+- title: Start
+  url: /
 
-- title: "Projekte"
+- title: Projekte
   children:
-    - title: "Projekt 1"
-      url: "/projects/projekt1"
-    - title: "Projekt 2"
-      url: "/projects/projekt2"
-    - title: "Projekt 3"
-      url: "/projects/projekt3"
-    - title: "Projekt 4"
-      url: "/projects/projekt4"
+    - title: Projekt 1
+      url: /projekt1/
+    - title: Projekt 2
+      url: /projekt2/
+    - title: Projekt 3
+      url: /projekt3/
+    - title: Projekt 4
+      url: /projekt4/
 
-- title: "Über mich"
-  url: "/about"
+- title: Über mich
+  url: /about/
+
