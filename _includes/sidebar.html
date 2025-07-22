@@ -1,19 +1,18 @@
-<nav class="sidebar">
+<nav class="nav-menu">
   <ul>
-    <li><a href="{{ "/" | relative_url }}">Startseite</a></li>
-    <li>
-      <a href="javascript:void(0)" onclick="toggleProjects()">Projekte ▾</a>
-      <ul id="projectList" style="display:none;">
-        <li><a href="{{ "/projekt1/" | relative_url }}">Projekt 1</a></li>
-      </ul>
-    </li>
-    <li><a href="{{ "/about/" | relative_url }}">Über mich</a></li>
+    {% for item in site.data.navigation %}
+      <li class="{% if page.url == item.url %}active{% endif %}">
+        <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+        {% if item.children %}
+          <ul>
+            {% for child in item.children %}
+              <li class="{% if page.url == child.url %}active{% endif %}">
+                <a href="{{ child.url | relative_url }}">{{ child.name }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
   </ul>
 </nav>
-<script>
-  function toggleProjects() {
-    var ul = document.getElementById("projectList");
-    ul.style.display = ul.style.display === "none" ? "block" : "none";
-  }
-</script>
-
