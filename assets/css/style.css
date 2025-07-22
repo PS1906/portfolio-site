@@ -1,3 +1,17 @@
+/* Überschriften mit Serifenschrift, Body mit Sans-Serif */
+body {
+  font-family: Arial, sans-serif;
+}
+h2, .content h1 {
+  font-family: Georgia, serif;
+}
+
+/* Mehr Abstand über jeder Sektion */
+h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
 /* Container für Sidebar + Content */
 .container {
   display: flex;
@@ -169,4 +183,84 @@
 /* Hauptkategorien fett */
 .nav-menu > ul > li > a {
   font-weight: bold;
+}
+
+/* Extra Abstand zwischen Top-Level-Eintrag und Unterliste */
+.nav-menu > ul > li > ul {
+  margin-top: 1rem;  /* hier den Abstand nach Bedarf anpassen */
+}
+
+/* Flex-Container für Über-mich-Header */
+.about-header {
+  display: flex;
+  align-items: center;      /* richten Text und Bild vertikal mittig aus */
+  justify-content: flex-start;                /* Abstand zwischen Text und Bild */
+  margin-bottom: 2rem;      /* Abstand nach unten */
+}
+
+/* Textbereich nimmt den verfügbaren Raum */
+.about-text {
+  flex: 0 1 auto;
+  margin-right: 5rem;
+  line-height: 1.4;
+  font-size: 1rem;
+}
+
+/* Foto-Bereich */
+.about-photo img {
+  max-width: 200px;         /* gleiche Größe wie vorher */
+  border-radius: 100px;
+  display: block;
+}
+
+/* Buttons für About-Page CTA */
+.about-cta {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn-contact {
+  background-color: #6664ce;
+  color: #fff;
+}
+
+.btn-dashboard {
+  background-color: #6664ce;
+  color: #fff;
+}
+
+.btn-github {
+  background-color: #6664ce; 
+  color: #fff;
+}
+
+/* Hover-Effekte */
+.btn-contact:hover,
+.btn-dashboard:hover,
+.btn-github:hover, {
+  opacity: 0.9;
+}
+
+.nav-menu .active > a { 
+  border-left: 4px solid #007acc; 
+  padding-left: 0.5rem; 
+  color: #007acc;
+}
+
+/* Aktive Sidebar-Kategorie hervorheben */
+.nav-menu .active > a {
+  border-left: 4px solid #007acc;  /* blauer Balken */
+  padding-left: 0.5rem;            /* Abstand ausgleichen */
+  color: #007acc;                  /* Link-Farbe anpassen */
+  background-color: rgba(0, 122, 204, 0.1); /* leichter Hintergrund */
 }
