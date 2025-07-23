@@ -1,7 +1,6 @@
 - name: "Startseite"
   url: "/"
 - name: "Projekte"
-  url: "/projects/"
   children:
     - name: "Projekt 1"
       url: "/projects/projekt1/"

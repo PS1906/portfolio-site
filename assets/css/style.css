@@ -42,6 +42,44 @@ h2 {
   color: #333;
 }
 
+/* Summary-Pfeil anpassen */
+.nav-menu summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-menu details > summary::-webkit-details-marker {
+  display: none; /* Standard-Dreieck ausblenden */
+}
+
+.nav-menu details > summary::before {
+  display: inline-block;
+  margin-right: 0.5rem;
+  transform: rotate(0deg);
+  transition: transform 0.2s;
+}
+
+.nav-menu details > summary::after {
+  content: "▶";
+}
+
+.nav-menu details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+/* Abstand unter dem Hauptpunkt “Projekte” */
+.nav-menu details > summary {
+  margin-bottom: 0.75rem; /* Luft nach unten vor den Child-Links */
+  font-weight: bold;
+}
+
+/* Optional etwas Einzug für Kinder */
+.nav-menu details ul {
+  padding-left: 1.5rem;
+  margin: 0.25rem 0;
+}
+
 /* Content-Bereich */
 .content {
   flex: 1;
@@ -211,6 +249,7 @@ h2 {
   max-width: 200px;         /* gleiche Größe wie vorher */
   border-radius: 100px;
   display: block;
+  margin-left: -1.5rem;
 }
 
 /* Buttons für About-Page CTA */
