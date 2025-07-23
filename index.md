@@ -12,10 +12,10 @@ Ich bin **Philipp Schauer**, BI-Analyst mit Leidenschaft für datengetriebene In
 <div class="feature-image-row">
   <div class="feature-text-group">
     <ul class="icon-list">
-      <li><i class="fas fa-database"></i> <strong>Datenaufbereitung &amp; -visualisierung</strong> mit Excel</li>
-      <li><i class="fas fa-server"></i> <strong>Datenbanken</strong> SQL &amp; MySQL</li>
-      <li><i class="fas fa-python"></i> <strong>Python-Programmierung</strong> inkl. Webscraping, OOP und Web-Apps</li>
-      <li><i class="fas fa-chart-line"></i> <strong>Datenvisualisierung</strong> mit Matplotlib, Seaborn, Streamlit und Tableau</li>
+      <li><i class="fas fa-database"></i> <strong>Datenaufbereitung &amp; -visualisierung</strong>&nbsp;mit Excel</li>
+      <li><i class="fas fa-server"></i> <strong>Datenbanken</strong>&nbsp;SQL &amp; MySQL</li>
+      <li><i class="fab fa-python"></i> <strong>Python-Programmierung</strong>&nbsp;inkl. Webscraping, OOP und Web-Apps</li>
+      <li><i class="fas fa-chart-line"></i> <strong>Datenvisualisierung</strong>&nbsp;mit Streamlit, PowerBI und Tableau</li>
     </ul>
 
     <p class="after-features"><strong>Neugierig geworden?</strong></p>

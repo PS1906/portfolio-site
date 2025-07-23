@@ -13,4 +13,5 @@
       url: "/projects/projekt4/"
 - name: "Über mich"
   url: "/about/"
-
+- name: "Impressum"
+  url: "/impressum/"
