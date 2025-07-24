@@ -12,8 +12,7 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
+# Site settings # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
@@ -25,8 +24,9 @@ description: >
 author: Philipp Schauer
 lang: de
 
-baseurl: "" # bleibt lokal leer
-url: ""     # bleibt lokal leer
+url: "https://datavision-schauer.de"
+baseurl: ""    # bei Projekt-Site, z. B. "/portfolio"
+
 
 github_username: PS1906
 
