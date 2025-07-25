@@ -31,7 +31,7 @@ Das Power BI Dashboard besteht aus drei Seiten:
 ## 🔍 Technologien
 
 - **Tool**: Power BI Desktop
-- **Datenbasis**: <html>https://github.com/sssingh/pharmaceutical-sales-analysis-powerbi.git</html>
+- **Datenbasis**: [GitHub-Repo (sssingh)](https://github.com/sssingh/pharmaceutical-sales-analysis-powerbi)
 - **Techniken**:
   - Interaktive Filterlogik
   - DAX-basierte KPIs & Metriken
