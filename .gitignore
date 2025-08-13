@@ -6,3 +6,10 @@ vendor
 .bundle/
 .DS_Store
 *.swp
+_site/
+projects/_site/
+.jekyll-cache/
+.sass-cache/
+.jekyll-metadata
+vendor/
+*.map
