@@ -40,9 +40,15 @@ Das Power BI Dashboard besteht aus drei Seiten:
 
 Das Dashboard liefert schnelle Einblicke in Umsatztreiber und regionale Performance, ist modular filterbar und bereit zur Einbindung in Management-Reports.
 
-## 🎥 Projektvideo
+## Interaktives PowerBI-Dashboard
 
-<video controls width="100%">
-  <source src="/assets/videos/Projekt_1.mp4" type="video/mp4">
-  Dein Browser unterstützt kein HTML5-Video.
-</video>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+  <iframe
+    title="Pharmaceutical Sales Analysis"
+    src="https://app.powerbi.com/view?r=eyJrIjoiMzUzNjJhODUtNjMxOC00MTVjLWJiNGYtOTEwOWFkOWUxNmZlIiwidCI6ImMwMzIxN2NjLWVhOGQtNDFiMS05Yzk0LTFjMGQ0NjE1YWE5ZSJ9&pageName=5033248c2617e5287c0c"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+</div>
+
