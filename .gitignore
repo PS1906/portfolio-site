@@ -13,3 +13,8 @@ projects/_site/
 .jekyll-metadata
 vendor/
 *.map
+_site/
+.jekyll-cache/
+.sass.cache/
+.jekyll-metadate
+vendor/
