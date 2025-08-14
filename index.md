@@ -19,7 +19,7 @@ Ich bin **Philipp Schauer**, BI-Analyst mit Leidenschaft für datengetriebene In
     </ul>
 
     <p class="after-features"><strong>Neugierig geworden?</strong></p>
-    <p class="after-features">Dann werfen Sie gerne einen Blick auf meine <a href="{{ '/projects/' | relative_url }}">Projekte</a></p>
+    <p class="after-features">Dann werfen Sie gerne einen Blick auf meine <a href="{{ '/projects/projekt1/' | relative_url }}">Projekte</a></p>
     <p class="after-features">oder erfahren Sie mehr <a href="{{ '/about/' | relative_url }}">über mich</a>.</p>
   </div>
 

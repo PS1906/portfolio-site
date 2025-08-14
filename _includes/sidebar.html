@@ -1,25 +1,36 @@
 <nav class="nav-menu">
   <ul>
-    {% for item in site.data.navigation %}
-      {% if item.children %}
-        <li>
-          <details {% if item.children | map: "url" | where: page.url | size > 0 %}open{% endif %}>
-            <summary>{{ item.name }}</summary>
-            <ul>
-              {% for child in item.children %}
-                <li class="{% if page.url == child.url %}active{% endif %}">
-                  <a href="{{ child.url | relative_url }}">{{ child.name }}</a>
-                </li>
-              {% endfor %}
-            </ul>
-          </details>
-        </li>
-      {% else %}
-        <li class="{% if page.url == item.url %}active{% endif %}">
-          <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
-        </li>
-      {% endif %}
-    {% endfor %}
+  {% for item in site.data.navigation %}
+    {% if item.children %}
+      <li>
+        {% assign child_urls = item.children | map: "url" %}
+        <details {% if child_urls contains page.url %}open{% endif %}>
+          <summary>{{ item.name }}</summary>
+          <ul>
+            {% for child in item.children %}
+              <li class="{% if page.url == child.url %}active{% endif %}">
+                <a href="{{ child.url | relative_url }}"
+                   {% if page.url == child.url %}aria-current="page"{% endif %}>
+                  {{ child.name }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </details>
+      </li>
+    {% else %}
+      <li class="{% if item.url and page.url == item.url %}active{% endif %}">
+        {% if item.url %}
+          <a href="{{ item.url | relative_url }}"
+             {% if page.url == item.url %}aria-current="page"{% endif %}>
+            {{ item.name }}
+          </a>
+        {% else %}
+          <span class="nav-parent">{{ item.name }}</span>
+        {% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
   </ul>
 </nav>
 
