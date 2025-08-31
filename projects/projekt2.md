@@ -6,8 +6,9 @@ permalink: /projects/projekt2/
 # 🌍 World Demography & Climate
 
 ## 🧩 Projektziel
-Analyse globaler Demografie- und Wirtschaftsindikatoren mit Fokus auf Klimazonen und Regionen. Ziel: Zusammenhänge zwischen Bevölkerung, Geburten-/Sterberaten, Sektorenstruktur und BIP-Entwicklung sichtbar machen und Länder sauber vergleichen.
-                                                                                                                                                                                                                                                                                      ## 🧩 Projektziel                                                                                                                                                                                                                                                                                                       Analyse von Umsatzdaten eines fiktiven Pharmakonzerns, mit Fokus auf Produkt-, Länder-, Vertriebsteam- und Kundenumsatz um relevante Geschäftseinblicke für>
+Analyse globaler Demografie- und Wirtschaftsindikatoren mit Fokus auf Klimazonen und Regionen.
+Ziel: Zusammenhänge zwischen Bevölkerung, Geburten-/Sterberaten, Sektorenstruktur und BIP-Entwicklung sichtbar machen und Länder sauber vergleichen.
+
 ## 📊 Inhalt & Struktur
 
 Das Power BI Dashboard besteht aus drei Seiten:
